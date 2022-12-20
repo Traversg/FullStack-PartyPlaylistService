@@ -74,7 +74,7 @@ In this scenario you will run both the backend and frontend locally on your lapt
      > **TIP:** You only need to do this once - _unless_ you add/change Javascript dependencies.
    - Run the local server: `npm run run-local`
 
-After doing all of this, you will have a server running on port `8000` - you can access it by going to [http://localhost:8000](http://localhost:8000) in your browser. Create a playlist, add some songs to it (see [data.json](./data/data.json) for sample ASIN and track numbers you can use).
+After doing all of this, you will have a server running on port `8000` - you can access it by going to [http://localhost:8000](http://localhost:8000) in your browser. Create a playlist, add some songs to it (see [data.json](../data/data.json) for sample ASIN and track numbers you can use).
 
 To stop either the local backend (the `sam local...` command) or local frontend (the `npm run...`) command, simply press `Ctrl-C` in the terminal where the process is running.
 
@@ -150,7 +150,7 @@ Before this scenario will work, you need to perform a few steps:
    </details>
 
 5. Create a branch named like `feature/github-pipeline`, commit the pipeline file from the prior step, and push the changes. You should see a build start in the Actions tab of the repository. You can also open a PR from that branch back to main. When the build succeeds, you can merge the PR.
-6. _After you've merged the PR to `main`_, you should now have an API Gateway in your group account. You can run the command `aws cloudformation...` from the top of this document that you ran earlier in your individual account to get the API Resource ID for your group account. Update the line in [pipeline.yaml](.github/workflows/pipeline.yaml) that starts with `U5_API_RESOURCE_ID` with the ID. Commit that change on a branch named like `feature/api-resource-id-update` and open a PR back to `main`. Merge the PR after it passes the `build-feature` step. When the resulting `main` build runs, you should have a fully automated build and deployment pipeline.
+6. _After you've merged the PR to `main`_, you should now have an API Gateway in your group account. You can run the command `aws cloudformation...` from the top of this document that you ran earlier in your individual account to get the API Resource ID for your group account. Update the line in [pipeline.yaml](../.github/workflows/pipeline.yaml) that starts with `U5_API_RESOURCE_ID` with the ID. Commit that change on a branch named like `feature/api-resource-id-update` and open a PR back to `main`. Merge the PR after it passes the `build-feature` step. When the resulting `main` build runs, you should have a fully automated build and deployment pipeline.
 7. Create some sample data: `aws dynamodb batch-write-item --request-items file://data/data.json`
    > **TIP:** You only need to do this once. You did this earlier in the _individual_ AWS account, but if you want to use the app in the _group_ account you need to load the data again here.
 
