@@ -120,7 +120,7 @@ class Admin extends BindingClass {
         let songHtml = '';
         let song;
         for (song of playlist.songs) {
-            songHtml += '<div class="songs">' + '<b>' + song.songTitle + '</b>' +  ' ' + song.songArtist + '</div>';
+            songHtml += '<div class="songs">' + '<b>' + 'Title: ' + song.songTitle + '</b>' +  ' ' + 'Artist: ' + song.songArtist + '</div>';
         }
         document.getElementById('songs').innerHTML = songHtml;
     }

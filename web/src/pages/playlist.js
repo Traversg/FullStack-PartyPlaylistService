@@ -47,13 +47,13 @@ class Playlist extends BindingClass {
                 songHtml +=
                 '<div class="playlist-item">'
                     + '<div class="song-wrapper">'
-                        + '<span class="song-name">' + song.songTitle + '</span>' + ' '
-                        + '<span class="song-artist">' + song.songArtist + '</span>'
+                        + '<span class="song-name">' + 'Title: ' + song.songTitle + '</span>' + ' '
+                        + '<span class="song-artist">' + 'Artist: ' + song.songArtist + '</span>'
                     +  '</div>'
 
                     + '<div class="vote-wrapper">'
                         + '<div class="vote" id="' + song.songId + '"></div>'
-                        + '<div class="vote-count">' + song.upvotes + '</div>'
+                        + '<div class="vote-count">' + 'Upvotes: ' + song.upvotes + '</div>'
                     + '</div>'
                 +  '</div>';
             }
