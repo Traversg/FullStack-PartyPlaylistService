@@ -3,7 +3,7 @@
 Party playlist is an application that allows a user to create playlist for a party and invite their friends to add
 songs to the playlist and vote on the songs they want to hear first.
 
-Party Playlist was a collaborative project with three other team members: Matt Leigh, Jake Price, and Matthew Reuther.
+Party Playlist was a NSS group project completed with three other team members: Matt Leigh, Jake Price, and Matthew Reuther.
 
 Party Playlist utilizes AWS DynamoDB, API Gateway, Lambda to store and retrieve song, playlist, and user data.
 
