@@ -41,13 +41,12 @@ brew install node
     - Create an S3 bucket: `aws s3 mb s3://YOUR_BUCKET` 
     - Deploy the SAM template: `sam deploy --s3-bucket BUCKET_FROM_ABOVE --parameter-overrides S3Bucket=BUCKET_FROM_ABOVE FrontendDeployment=local`
       > **NOTE:** _Yes you have to provide the same S3 bucket name twice. Yes this is annoying._
-    - Create some sample data: `aws dynamodb batch-write-item --request-items file://data/data.json`
-      > **TIP:** You only need to do this once.
     - Run the local API: `sam local start-api --warm-containers LAZY`
 4. Run a local web server (aka the frontend):
     - CD into the web directory: `cd web`
     - Install dependencies : `npm install`
     - Run the local server: `npm run run-local`
+    -  > **NOTE:** Only songs found in the song table can be added to the playlist.
 
 After doing all of this, you will have a server running on port `8000` - you can access it by going to [http://localhost:8000](http://localhost:8000) in your browser.
 
