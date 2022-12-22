@@ -63,7 +63,7 @@ class Playlist extends BindingClass {
                     for (song of playlist.songs) {
                         this.clientLoaded();
                         if (song.songId == event.target.id) {
-                            this.client.addUpvoteToSong(event.target.id, '01', song.songTitle, song.songArtist);
+                            this.client.addUpvoteToSong(event.target.id, this.dataStore.get('playlistId'), song.songTitle, song.songArtist);
                             console.log(event.target.id);
                             event.currentTarget.classList.toggle('on');
                             this.clientLoaded();

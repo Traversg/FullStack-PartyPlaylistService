@@ -15,7 +15,7 @@ public class Song {
     private String genre;
     private Integer songLength;
 
-    @DynamoDBAttribute(attributeName = "songId")
+    @DynamoDBAttribute(attributeName = "id")
     public String getSongId() {
         return songId;
     }
