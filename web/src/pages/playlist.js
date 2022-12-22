@@ -53,11 +53,12 @@ class Playlist extends BindingClass {
 
                     + '<div class="vote-wrapper">'
                         + '<div class="vote" id="' + song.songId + '"></div>'
-                        + '<div class="vote-count">' + 'Upvotes: ' + song.upvotes + '</div>'
+                        + '<div class="vote-count" id="' + song.songId + 'upVotes' + '"> '+ 'Upvotes: ' + song.upvotes + '</div>'
                     + '</div>'
                 +  '</div>';
             }
             document.getElementById('songs').innerHTML = songHtml;
+
             for (const btn of document.querySelectorAll('.vote')) {
                 btn.addEventListener('click', event => {
                     for (song of playlist.songs) {
@@ -67,6 +68,7 @@ class Playlist extends BindingClass {
                             console.log(event.target.id);
                             event.currentTarget.classList.toggle('on');
                             this.clientLoaded();
+                            document.getElementById(song.songId + 'upVotes').innerHTML = 'Upvotes: ' + (song.upvotes + 1);
                         }
                     }
                     });
