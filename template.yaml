@@ -443,9 +443,9 @@ Resources:
                       PutRequest: {
                         Item: {
                           id: "02",
-                          songArtist: "Smash Mouth",
-                          songTitle: "All Star",
-                          genre: "Alternative",
+                          songArtist: "The Beatles",
+                          songTitle: "Yellow Submarine",
+                          genre: "Classic Rock",
                           songLength: 200
                         }
                       }
@@ -454,9 +454,9 @@ Resources:
                       PutRequest: {
                         Item: {
                           id: "03",
-                          songArtist: "Rick Astley",
-                          songTitle: "Never Gonna Give You Up",
-                          genre: "Pop",
+                          songArtist: "Christopher Cross",
+                          songTitle: "Sailing",
+                          genre: "Adult Contemporary",
                           songLength: 213
                         }
                       }
@@ -465,9 +465,9 @@ Resources:
                       PutRequest: {
                         Item: {
                           id: "04",
-                          songArtist: "Kenny Loggins",
-                          songTitle: "Danger Zone",
-                          genre: "Yacht Rock",
+                          songArtist: "Styx",
+                          songTitle: "Come Sail Away",
+                          genre: "Classic Rock",
                           songLength: 215
                         }
                       }
@@ -476,65 +476,10 @@ Resources:
                       PutRequest: {
                         Item: {
                           id: "05",
-                          songArtist: "Michael McDonald",
-                          songTitle: "I Keep Forgettin' (Every Time You're Near)",
-                          genre: "Yacht Rock",
+                          songArtist: "Hues Corporation",
+                          songTitle: "Rock The Boat",
+                          genre: "Disco",
                           songLength: 222
-                        }
-                      }
-                    },
-                    {
-                      PutRequest: {
-                        Item: {
-                          id: "06",
-                          songArtist: "Christopher Cross",
-                          songTitle: "Sailing",
-                          genre: "Adult Contemporary",
-                          songLength: 256
-                        }
-                      }
-                    },
-                    {
-                      PutRequest: {
-                        Item: {
-                          id: "07",
-                          songArtist: "Styx",
-                          songTitle: "Come Sail Away",
-                          genre: "AOR",
-                          songLength: 367
-                        }
-                      }
-                    },
-                    {
-                      PutRequest: {
-                        Item: {
-                          id: "08",
-                          songArtist: "Limp Bizkit" ,
-                          "songTitle": "Nookie",
-                          "genre": "Nu Metal",
-                          songLength: 289
-                        }
-                      }
-                    },
-                    {
-                      PutRequest: {
-                        Item: {
-                          id: "09",
-                          songArtist: "Nickelback",
-                          songTitle: "Photograph",
-                          genre: "Hard Rock",
-                          songLength: 238
-                        }
-                      }
-                    },
-                    {
-                      PutRequest: {
-                        Item: {
-                          id: "10",
-                          songArtist: "Sisqo",
-                          songTitle: "Thong Song",
-                          genre: "Hip-hop",
-                          songLength: 233
                         }
                       }
                     }
