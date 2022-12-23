@@ -168,6 +168,8 @@ To stop either the local backend (the `sam local...` command) or local frontend 
 ## Usage
 
 
+[Party Playlist Demo](https://user-images.githubusercontent.com/57022409/209223943-2804c2cd-f6af-41b7-abe0-5774fd682b4a.mp4)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
