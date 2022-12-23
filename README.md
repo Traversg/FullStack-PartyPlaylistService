@@ -56,10 +56,6 @@
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#runlocally">Installation</a></li>
-      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -159,6 +155,13 @@ brew install node
 After doing all of this, you will have a server running on port `8000` - you can access it by going to [http://localhost:8000](http://localhost:8000) in your browser.
 
 To stop either the local backend (the `sam local...` command) or local frontend (the `npm run...`) command, simply press `Ctrl-C` in the terminal where the process is running.
+
+**SONGS TABLE**
+- `TITLE: The Yellow Submarine ARTIST: The Beatles`
+- `TITLE: The Lonely Island ARTIST: I'm On A Boat`
+- `TITLE: Come Sail Away ARTIST: Styx`
+- `TITLE: Sailing ARTIST: Christopher Cross`
+- `TITLE: Rock The Boat ARTIST: Hues Corporation`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
